@@ -1,0 +1,8 @@
+{
+  "name": "Todo app",
+  "description": "A simple todo app that uses wakanda-node connector",
+  "logo": "http://node-js-sample.herokuapp.com/node.svg",
+  "repository": "https://github.com/midrissi/todo-node.git",
+  "keywords": ["node", "wakanda", "connector"],
+  "image": "heroku/nodejs"
+}
