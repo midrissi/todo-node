@@ -39,7 +39,7 @@
 					break;
 				case 'completed':
 					res = Task.query({
-						done: 'true'
+						query: 'done == true'
 					});
 					break;
 				case undefined:

@@ -2,19 +2,15 @@
  * Get all tasks
  **/
 exports.all = function(req, res) {
-	var isQuery = req.query.query;
+	var query = req.query.query;
 
-	if (!isQuery && Object.keys(req.query).length > 0) {
-		ds.Task.meta.attributes.forEach(function(attr) {
-			if (req.query.hasOwnProperty(attr.name)) {
-				isQuery = isQuery || {};
-				isQuery[attr.name] = req.query[attr.name];
-			}
-		});
-	}
+	query = (query?query + " ":"ID>0 ") + "order by created_at desc";
 
-	ds.Task.query(isQuery || {}).then(function(col) {
+	ds.Task.query(query).then(function(col) {
 		res.json(col.models);
+	}).catch(function (err) {
+		console.log(err);
+		res.status(400).end();
 	});
 };
 

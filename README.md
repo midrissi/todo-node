@@ -24,6 +24,10 @@ $ git push heroku master
 $ heroku open
 ```
 
+Don't forget to add environment variables after deploying the application on heroku.
+
+![](https://raw.githubusercontent.com/midrissi/todo-node/master/heroku.png) 
+
 ## LICENCE
 
 The MIT License (MIT)
