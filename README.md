@@ -14,7 +14,7 @@ $ npm i
 $ nf start web=1
 ```
 
-The application uses [todo-wakanda](https://github.com/midrissi/todo-wakanda.git) as a backing service to edit the database. So you can run the wakanda solution locally (dont't forget to edit the `.env` file before running the `nf` command) or feel free to use the [online demo](js-test.us.wak-apps.com).
+The application uses [todo-wakanda](https://github.com/midrissi/todo-wakanda.git) as a backing service to edit the database. So you can run the wakanda solution locally (dont't forget to edit the `.env` file before running the `nf` command) or feel free to use the [online demo](http://js-test.us.wak-apps.com).
 
 ## Deploying to Heroku
 
