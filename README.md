@@ -3,6 +3,18 @@ This app was created with the [wakanda-node](https://github.com/midrissi/wakanda
 
 [![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
+## Deploying to Heroku
+
+```
+$ heroku create
+$ git push heroku master
+$ heroku open
+```
+
+Don't forget to add the environment variables after deploying the application on heroku.
+
+![](https://raw.githubusercontent.com/midrissi/todo-node/master/heroku.png) 
+
 ## Running Locally
 
 Make sure you have [Node.js](http://nodejs.org/), [node-foreman](http://strongloop.github.io/node-foreman/) and the [Heroku Toolbelt](https://toolbelt.heroku.com/) installed.
@@ -15,18 +27,6 @@ $ nf start web=1
 ```
 
 The application uses [todo-wakanda](https://github.com/midrissi/todo-wakanda.git) as a backing service to edit the database. So you can run the wakanda solution locally (dont't forget to edit the `.env` file before running the `nf` command) or feel free to use the [online demo](http://js-test.us.wak-apps.com).
-
-## Deploying to Heroku
-
-```
-$ heroku create
-$ git push heroku master
-$ heroku open
-```
-
-Don't forget to add environment variables after deploying the application on heroku.
-
-![](https://raw.githubusercontent.com/midrissi/todo-node/master/heroku.png) 
 
 ## LICENCE
 
